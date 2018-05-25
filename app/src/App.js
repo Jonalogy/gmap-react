@@ -2,13 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
-import { GMaps, MapComponent } from './components/map';
-import { getGmapApi, setInitMap } from './utils/initMap';
+import { MapComponent } from './components/map';
+import { getGmapApi } from './utils/initMap';
 import { GMAP_KEY } from './components/gmap-key';
 
-// My Implementation
-setInitMap();
-// getGmapApi(GMAP_KEY); // eslint-disable-line no-undef
 class AppComponent extends Component {
 
   componentDidMount() {
@@ -45,7 +42,7 @@ class AppComponent extends Component {
       </div>
     );
   }
-  
+
 }
 
 function mapStateToProps (store, ownProps) {

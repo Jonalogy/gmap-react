@@ -1,10 +1,21 @@
 import $script from 'scriptjs';
 
+
+/**
+ * getGmapApi() Fetches and loads GMap JS API into window object
+ * @param {string} GMAP_KEY Google Map's API key
+ * @param {callback} callback Any call back. If left empty, the callback logs 'Google is ready'
+ * @returns {void} 
+ */
 export function getGmapApi (GMAP_KEY, callback = () => console.log('Google is ready')) {
   $script.ready('google', callback); 
   $script(`https://maps.googleapis.com/maps/api/js?key=${GMAP_KEY}`, 'google');
 }
 
+/** 
+ * Manual implementation of creating a map object with GMap's API 
+ * @returns {void}
+ */
 export function setInitMap () {
   /* eslint-disable no-unused-vars, no-undef */
   // initMap required by Google Maps
