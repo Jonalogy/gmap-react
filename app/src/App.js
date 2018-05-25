@@ -21,7 +21,7 @@ class AppComponent extends Component {
 
   componentDidUpdate() {
     console.log('App updated:', this.props)
-    // setInitMap();
+    setInitMap();
   }
 
   render() {
@@ -33,12 +33,12 @@ class AppComponent extends Component {
         </header>
         { 
           this.props.googleApiLoaded === true &&
-          // <CustomMap />
-          <ReactMap 
-            isMarkerShown={true} 
-            loadingElement={<div style={{ height: `100%` }} />}
-            containerElement={<div style={{ height: `400px` }} />}
-            mapElement={<div style={{ height: `100%` }} />} /> 
+          <CustomMap />
+          // <ReactMap 
+          //   isMarkerShown={true} 
+          //   loadingElement={<div style={{ height: `100%` }} />}
+          //   containerElement={<div style={{ height: `400px` }} />}
+          //   mapElement={<div style={{ height: `100%` }} />} /> 
         }
       </div>
     );
