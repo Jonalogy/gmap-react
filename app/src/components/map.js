@@ -17,10 +17,17 @@ export class CustomMap extends Component {
   }
 }
 
-export const MyMapComponent = withGoogleMap(props => <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
-  >
+export const MapComponent = withGoogleMap(props => ( // eslint-disable-line no-extra-parens
+  <GoogleMap defaultZoom={8}
+             defaultCenter={{ lat: -34.397, lng: 150.644 }} >
     {props.isMarkerShown && <Marker position={{ lat: -34.397, lng: 150.644 }} />}
   </GoogleMap>
-)
+));
+
+export const GMaps = ( // eslint-disable-line no-extra-parens
+  <MapComponent 
+    isMarkerShown={true} 
+    loadingElement={<div style={{ height: `100%` }} />}
+    containerElement={<div style={{ height: `400px` }} />}
+    mapElement={<div style={{ height: `100%` }} />} />
+);
