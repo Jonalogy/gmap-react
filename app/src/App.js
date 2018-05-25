@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import logo from './logo.svg';
 import './App.css';
-import { MapComponent } from './components/map';
-import { getGmapApi } from './utils/initMap';
-import { GMAP_KEY } from './components/gmap-key';
 
+import { CustomMap } from './components/CustomMap/CustomMap';
+import { ReactMap } from './components/ReactMap/ReactMap';
+import { getGmapApi, setInitMap } from './utils/initMap';
+import { GMAP_KEY } from './gmap-key';
 class AppComponent extends Component {
 
   componentDidMount() {
-    if (window.hasOwnProperty('google')) {
-      console.log('Google Api Loaded');
-    } else {
+    if (!window.hasOwnProperty('google')) {
       console.log('Google says no...', this.props);
       getGmapApi(
         GMAP_KEY, 
@@ -22,6 +21,7 @@ class AppComponent extends Component {
 
   componentDidUpdate() {
     console.log('App updated:', this.props)
+    // setInitMap();
   }
 
   render() {
@@ -33,12 +33,13 @@ class AppComponent extends Component {
         </header>
         { 
           this.props.googleApiLoaded === true &&
-          <MapComponent 
+          // <CustomMap />
+          <ReactMap 
             isMarkerShown={true} 
             loadingElement={<div style={{ height: `100%` }} />}
             containerElement={<div style={{ height: `400px` }} />}
             mapElement={<div style={{ height: `100%` }} />} /> 
-          }
+        }
       </div>
     );
   }

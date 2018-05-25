@@ -34,4 +34,14 @@ export function setInitMap () {
     });
   };
   /* eslint-enable no-unused-vars, no-undef */
+  window.initMap();
+}
+
+/**
+ * Configurations to render Google Map's route
+ * @returns {void}
+ */
+export function renderRoute () {
+  if (!window.hasOwnProperty('google')) throw Error('No Google Api Detected... :(')
+  let directionsDisplay = new google.maps.DirectionsRenderer(); // eslint-disable-line no-undef
 }

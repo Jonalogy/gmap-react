@@ -1,0 +1,505 @@
+{
+  "geocoded_waypoints": [
+      {
+          "geocoder_status": "OK",
+          "place_id": "ChIJjQcl90sY2jER0d9ui1pFp9s",
+          "types": [
+              "establishment",
+              "point_of_interest",
+              "shopping_mall"
+          ]
+      },
+      {
+          "geocoder_status": "OK",
+          "place_id": "ChIJbRbrK-UX2jERSKAFne9AEPI",
+          "types": [
+              "premise"
+          ]
+      }
+  ],
+  "routes": [
+      {
+          "bounds": {
+              "northeast": {
+                  "lat": 1.3354395,
+                  "lng": 103.9071414
+              },
+              "southwest": {
+                  "lat": 1.302974,
+                  "lng": 103.8716487
+              }
+          },
+          "copyrights": "Map data ©2018 Google",
+          "legs": [
+              {
+                  "arrival_time": {
+                      "text": "2:43pm",
+                      "time_zone": "Asia/Singapore",
+                      "value": 1527230591
+                  },
+                  "departure_time": {
+                      "text": "1:41pm",
+                      "time_zone": "Asia/Singapore",
+                      "value": 1527226862
+                  },
+                  "distance": {
+                      "text": "7.4 km",
+                      "value": 7352
+                  },
+                  "duration": {
+                      "text": "1 hour 2 mins",
+                      "value": 3729
+                  },
+                  "end_address": "31 Kaki Bukit Rd 3, Singapore 417818",
+                  "end_location": {
+                      "lat": 1.3354395,
+                      "lng": 103.9056153
+                  },
+                  "start_address": "1 Stadium Pl, Singapore 397628",
+                  "start_location": {
+                      "lat": 1.302974,
+                      "lng": 103.8724373
+                  },
+                  "steps": [
+                      {
+                          "distance": {
+                              "text": "1.7 km",
+                              "value": 1691
+                          },
+                          "duration": {
+                              "text": "21 mins",
+                              "value": 1287
+                          },
+                          "end_location": {
+                              "lat": 1.312515,
+                              "lng": 103.8732619
+                          },
+                          "html_instructions": "Walk to Aft Lor 1 Geylang",
+                          "polyline": {
+                              "points": "qn}Fwq~xRQLSJSFIBKBU@S@[@[AK@M?G@m@HI@GCECC?WCWAQ?MAS@G?G@C@C@CBIHGJCL?HAJAHAFCDABABC@C@IBO@CCAACAA?CACAA?C?CAC?A?E@OFC@k@q@_@c@MOUa@GQESG]CWEa@C]Ce@A_A?kA?e@?iB?q@O?A?C?A??@A??F@B?@@?@??A?A?A?A?A?AA?A??@A??@A@?@?@BB@A?A@??C?CA??AA?A??@A??@?B?@?@B@?JO?M@K?K?M@MBG@G@KBMBC?KBG@A@A?A@?@?B?@@D@B@FBHHXDL?D@@A??@A@A@CBEBc@RSJqBdAkCrAIFC?A@AAA?AASc@ACA??AA?A?A?GBCEIQAEMFC@MFa@V[TGD]RmBhACBMFYH]Ha@Jc@LMBSFy@TQDQUIM_@g@KOKMMUo@kAGKGN"
+                          },
+                          "start_location": {
+                              "lat": 1.302974,
+                              "lng": 103.8724373
+                          },
+                          "steps": [
+                              {
+                                  "distance": {
+                                      "text": "0.2 km",
+                                      "value": 162
+                                  },
+                                  "duration": {
+                                      "text": "2 mins",
+                                      "value": 116
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3043501,
+                                      "lng": 103.8721547
+                                  },
+                                  "html_instructions": "Head <b>northwest</b> toward <b>Stadium Pl</b>",
+                                  "polyline": {
+                                      "points": "qn}Fwq~xRQLSJSFIBKBU@S@[@[AK@M?G@m@HI@GC"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.302974,
+                                      "lng": 103.8724373
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.2 km",
+                                      "value": 153
+                                  },
+                                  "duration": {
+                                      "text": "2 mins",
+                                      "value": 115
+                                  },
+                                  "end_location": {
+                                      "lat": 1.305388,
+                                      "lng": 103.8716487
+                                  },
+                                  "html_instructions": "Slight <b>right</b> onto <b>Stadium Pl</b>",
+                                  "maneuver": "turn-slight-right",
+                                  "polyline": {
+                                      "points": "ew}F}o~xRECC?WCWAQ?MAS@G?G@C@C@CBIHGJCL?HAJAHAFCDABABC@C@IBO@"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3043501,
+                                      "lng": 103.8721547
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.4 km",
+                                      "value": 440
+                                  },
+                                  "duration": {
+                                      "text": "5 mins",
+                                      "value": 321
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3065459,
+                                      "lng": 103.8749819
+                                  },
+                                  "html_instructions": "At the roundabout, take the <b>2nd</b> exit onto <b>Stadium Dr</b>",
+                                  "maneuver": "roundabout-left",
+                                  "polyline": {
+                                      "points": "u}}Fyl~xRCCAACAA?CACAA?C?CAC?A?E@OFC@k@q@_@c@MOUa@GQESG]CWEa@C]Ce@A_A?kA?e@?iB?q@O?"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.305388,
+                                      "lng": 103.8716487
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "62 m",
+                                      "value": 62
+                                  },
+                                  "duration": {
+                                      "text": "1 min",
+                                      "value": 46
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3065925,
+                                      "lng": 103.8748272
+                                  },
+                                  "html_instructions": "Turn <b>left</b> toward <b>Kallang Airport Way</b>",
+                                  "maneuver": "turn-left",
+                                  "polyline": {
+                                      "points": "}d~Fsa_yRA?C?A??@A??F@B?@@?@??A?A?A?A?A?AA?A??@A??@A@?@?@BB@A?A@??C?CA??AA?A??@A??@?B?@?@B@?J"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3065459,
+                                      "lng": 103.8749819
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.4 km",
+                                      "value": 402
+                                  },
+                                  "duration": {
+                                      "text": "5 mins",
+                                      "value": 315
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3091473,
+                                      "lng": 103.8734223
+                                  },
+                                  "html_instructions": "Take the pedestrian overpass<div style=\"font-size:0.9em\">Take the stairs</div>",
+                                  "polyline": {
+                                      "points": "ee~Fu`_yRO?M@K?K?M@MBG@G@KBMBC?KBG@A@A?A@?@?B?@@D@B@FBHHXDL?D@@A??@A@A@CBEBc@RSJqBdAkCrAIFC?A@AAA?AASc@ACA??AA?A?A?GB"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3065925,
+                                      "lng": 103.8748272
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "15 m",
+                                      "value": 15
+                                  },
+                                  "duration": {
+                                      "text": "1 min",
+                                      "value": 10
+                                  },
+                                  "end_location": {
+                                      "lat": 1.309296,
+                                      "lng": 103.8735314
+                                  },
+                                  "html_instructions": "Turn <b>right</b> onto <b>Kallang Airport Way</b>",
+                                  "maneuver": "turn-right",
+                                  "polyline": {
+                                      "points": "eu~F{w~xRCEIQAEMF"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3091473,
+                                      "lng": 103.8734223
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.2 km",
+                                      "value": 166
+                                  },
+                                  "duration": {
+                                      "text": "2 mins",
+                                      "value": 124
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3105347,
+                                      "lng": 103.8726881
+                                  },
+                                  "html_instructions": "Turn <b>left</b> onto <b>Kallang Airport Dr</b>",
+                                  "maneuver": "turn-left",
+                                  "polyline": {
+                                      "points": "cv~Fqx~xRC@MFa@V[TGD]RmBhACBMF"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.309296,
+                                      "lng": 103.8735314
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.1 km",
+                                      "value": 138
+                                  },
+                                  "duration": {
+                                      "text": "2 mins",
+                                      "value": 113
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3117136,
+                                      "lng": 103.8722612
+                                  },
+                                  "html_instructions": "Continue onto <b>Lor 1 Geylang</b>",
+                                  "polyline": {
+                                      "points": "y}~Fis~xRYH]Ha@Jc@LMBSFy@TQD"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3105347,
+                                      "lng": 103.8726881
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.2 km",
+                                      "value": 153
+                                  },
+                                  "duration": {
+                                      "text": "2 mins",
+                                      "value": 127
+                                  },
+                                  "end_location": {
+                                      "lat": 1.312515,
+                                      "lng": 103.8732619
+                                  },
+                                  "html_instructions": "Turn <b>right</b> onto <b>Sims Ave</b><div style=\"font-size:0.9em\">Destination will be on the left</div>",
+                                  "maneuver": "turn-right",
+                                  "polyline": {
+                                      "points": "ee_Gsp~xRQUIM_@g@KOKMMUo@kAGKGN"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3117136,
+                                      "lng": 103.8722612
+                                  },
+                                  "travel_mode": "WALKING"
+                              }
+                          ],
+                          "travel_mode": "WALKING"
+                      },
+                      {
+                          "distance": {
+                              "text": "5.0 km",
+                              "value": 5044
+                          },
+                          "duration": {
+                              "text": "19 mins",
+                              "value": 1140
+                          },
+                          "end_location": {
+                              "lat": 1.3309653,
+                              "lng": 103.9063219
+                          },
+                          "html_instructions": "Bus towards Pasir Ris Int",
+                          "polyline": {
+                              "points": "gj_G{v~xRBCMU}@cCw@qDGWa@iBe@{B[kAI_@i@qBg@uBWcBG]U}A[mDAIe@kEK}@Q_BESSmB[cCI{@KcAo@uFk@_FCOSkBo@oGKiAMoAi@sFK_AGq@AIYoBGm@@?]_DCWUwCKkAGw@AMUwDAIAMU}BEe@e@iDEc@Q}AAG[yCa@_Eo@sGqAaKMcAg@{DIq@E[EUc@sCC]OAuDOsACwBC{@EOAsBIg@E?Ay@EmBOg@EkDWsAKaGa@y@G{AEiABq@D_BPw@RE@o@TyBjAmAfAUWcCwCyAgB]c@OWQJ"
+                          },
+                          "start_location": {
+                              "lat": 1.312515,
+                              "lng": 103.8732619
+                          },
+                          "transit_details": {
+                              "arrival_stop": {
+                                  "location": {
+                                      "lat": 1.3309653,
+                                      "lng": 103.9063219
+                                  },
+                                  "name": "Blk 646"
+                              },
+                              "arrival_time": {
+                                  "text": "2:35pm",
+                                  "time_zone": "Asia/Singapore",
+                                  "value": 1527230128
+                              },
+                              "departure_stop": {
+                                  "location": {
+                                      "lat": 1.312515,
+                                      "lng": 103.8732619
+                                  },
+                                  "name": "Aft Lor 1 Geylang"
+                              },
+                              "departure_time": {
+                                  "text": "2:16pm",
+                                  "time_zone": "Asia/Singapore",
+                                  "value": 1527228988
+                              },
+                              "headsign": "Pasir Ris Int",
+                              "headway": 840,
+                              "line": {
+                                  "agencies": [
+                                      {
+                                          "name": "SBS Transit",
+                                          "phone": "011 65 1800 287 2727",
+                                          "url": "http://www.sbstransit.com.sg/"
+                                      }
+                                  ],
+                                  "color": "#187249",
+                                  "short_name": "21",
+                                  "vehicle": {
+                                      "icon": "//maps.gstatic.com/mapfiles/transit/iw2/6/bus2.png",
+                                      "name": "Bus",
+                                      "type": "BUS"
+                                  }
+                              },
+                              "num_stops": 12
+                          },
+                          "travel_mode": "TRANSIT"
+                      },
+                      {
+                          "distance": {
+                              "text": "0.6 km",
+                              "value": 617
+                          },
+                          "duration": {
+                              "text": "8 mins",
+                              "value": 463
+                          },
+                          "end_location": {
+                              "lat": 1.3354395,
+                              "lng": 103.9056153
+                          },
+                          "html_instructions": "Walk to 31 Kaki Bukit Rd 3, Singapore 417818",
+                          "polyline": {
+                              "points": "q}bGoeeyRBASa@OYWg@]q@EKgA`@QF]NKDoAd@oCdAKD_@No@Tc@NwAj@MDE@KDqAd@_A`@g@_AKD"
+                          },
+                          "start_location": {
+                              "lat": 1.3309653,
+                              "lng": 103.9063219
+                          },
+                          "steps": [
+                              {
+                                  "distance": {
+                                      "text": "0.1 km",
+                                      "value": 100
+                                  },
+                                  "duration": {
+                                      "text": "1 min",
+                                      "value": 71
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3314335,
+                                      "lng": 103.9071414
+                                  },
+                                  "html_instructions": "Head <b>northeast</b> on <b>Bedok Reservoir Rd</b> toward <b>Jln Tenaga</b>",
+                                  "polyline": {
+                                      "points": "q}bGoeeyRBASa@OYWg@]q@EK"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3309653,
+                                      "lng": 103.9063219
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.4 km",
+                                      "value": 361
+                                  },
+                                  "duration": {
+                                      "text": "4 mins",
+                                      "value": 252
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3343586,
+                                      "lng": 103.9057332
+                                  },
+                                  "html_instructions": "Turn <b>left</b> onto <b>Jln Tenaga</b>",
+                                  "maneuver": "turn-left",
+                                  "polyline": {
+                                      "points": "m`cGsjeyRgA`@QF]NKDoAd@oCdAKD_@No@Tc@NwAj@MD"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3314335,
+                                      "lng": 103.9071414
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "0.1 km",
+                                      "value": 110
+                                  },
+                                  "duration": {
+                                      "text": "2 mins",
+                                      "value": 98
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3351839,
+                                      "lng": 103.9053277
+                                  },
+                                  "html_instructions": "Continue onto <b>Kaki Bukit Rd 3</b>",
+                                  "polyline": {
+                                      "points": "wrcGyaeyRE@KDqAd@_A`@"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3343586,
+                                      "lng": 103.9057332
+                                  },
+                                  "travel_mode": "WALKING"
+                              },
+                              {
+                                  "distance": {
+                                      "text": "46 m",
+                                      "value": 46
+                                  },
+                                  "duration": {
+                                      "text": "1 min",
+                                      "value": 42
+                                  },
+                                  "end_location": {
+                                      "lat": 1.3354395,
+                                      "lng": 103.9056153
+                                  },
+                                  "html_instructions": "Turn <b>right</b><div style=\"font-size:0.9em\">Destination will be on the right</div>",
+                                  "maneuver": "turn-right",
+                                  "polyline": {
+                                      "points": "{wcGi_eyRg@_AKD"
+                                  },
+                                  "start_location": {
+                                      "lat": 1.3351839,
+                                      "lng": 103.9053277
+                                  },
+                                  "travel_mode": "WALKING"
+                              }
+                          ],
+                          "travel_mode": "WALKING"
+                      }
+                  ],
+                  "traffic_speed_entry": [],
+                  "via_waypoint": []
+              }
+          ],
+          "overview_polyline": {
+              "points": "qn}Fwq~xRe@X]Ja@Do@Bg@?U@w@JMGeAEq@@UPKXATIZEDMDO@CCECKCMAUHC@k@q@m@s@]s@Mq@Iy@GcAAkC?oC?q@O?E?A?AHBD@C?EE?AB?BD@@EACC?AFBNu@@k@Hu@N@RT`ACDaAf@kG`DE?Yi@CAA?GBCEKWQHsAz@}ChBkFtAgA{AqA{BGNBCMU}@cC_AiEgAeFwBsI_@aCU}A[mDg@uE]}C_AaIkBiP}AuO_AoJa@}C[_Dm@sH[}E[cDk@mEqA_Mo@sGqAaKu@_Gy@wFC]OAuDOsACsDIcCKoE]iPkAuCM{BH_BPw@Ru@VyBjAmAfAyCoDwBkCOWQJBASa@g@aAc@}@yAh@iG`C_Cz@wBx@qCfAg@_AKD"
+          },
+          "summary": "",
+          "warnings": [
+              "Walking directions are in beta.    Use caution – This route may be missing sidewalks or pedestrian paths."
+          ],
+          "waypoint_order": []
+      }
+  ],
+  "status": "OK"
+}
