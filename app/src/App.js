@@ -5,13 +5,13 @@ import './App.css';
 
 import { CustomMap } from './components/CustomMap/CustomMap';
 import { ReactMap } from './components/ReactMap/ReactMap';
-import { getGmapApi, setInitMap } from './utils/initMap';
+import { getGmapApi, setInitMap, initChicago, sampleInitMap } from './utils/mapUtils';
 import { GMAP_KEY } from './gmap-key';
 class AppComponent extends Component {
 
   componentDidMount() {
     if (!window.hasOwnProperty('google')) {
-      console.log('Google says no...', this.props);
+      // console.log('Google says no...', this.props);
       getGmapApi(
         GMAP_KEY, 
         () => this.props.dispatch( {type: "GMAP_API_LOADED"} )
@@ -20,8 +20,10 @@ class AppComponent extends Component {
   }
 
   componentDidUpdate() {
-    console.log('App updated:', this.props)
-    setInitMap();
+    // console.log('App updated:', this.props)
+    // setInitMap();
+    // initChicago();
+    sampleInitMap();
   }
 
   render() {
