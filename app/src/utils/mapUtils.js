@@ -11,7 +11,7 @@ import chicagoKingsman from '../data/chicago_kingsman.json';
  */
 export function getGmapApi (GMAP_KEY, callback = () => console.log('Google is ready')) {
   $script.ready('google', callback); 
-  $script(`https://maps.googleapis.com/maps/api/js?key=${GMAP_KEY}`, 'google');
+  $script(`https://maps.googleapis.com/maps/api/js?key=${GMAP_KEY}&libraries=geometry`, 'google');
 }
 
 /** 
@@ -60,7 +60,15 @@ export function initChicago () {
 
 export function sampleInitMap() {
   var directionsService = new google.maps.DirectionsService;
-  var directionsDisplay = new google.maps.DirectionsRenderer;
+  var directionsDisplay = new google.maps.DirectionsRenderer({
+    polylineOptions: { // not working yet
+      strokeColor: '#000000',
+      strokeOpacity: 1,
+      strokeWeight: 3
+    }
+  });
+  const pathDecoder = google.maps.geometry.encoding.decodePath;
+
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 7,
     center: {lat: 41.85, lng: -87.65}
@@ -70,17 +78,60 @@ export function sampleInitMap() {
 
   function calculateAndDisplayRoute(directionsService, directionsDisplay) {
     directionsService.route({
-      origin: "chicago, il",
-      destination: "kingman, az",
+      origin: "raffles place singapore",
+      destination: "buona vista singapore",
       travelMode: 'DRIVING'
     }, (response, status) => {
       if (status === 'OK') {
-        console.log(response)
-        directionsDisplay.setDirections(response);
+        console.log('directions service response')
+        console.log(JSON.stringify(response))
+        // directionsDisplay.setDirections(response);
       } else {
         window.alert('Directions request failed due to ' + status);
       }
     });
+
+    const data = {
+      origin: 'raffles place',
+      destination: 'buona vista'
+    }
+
+    fetch('http://localhost:3010/directions', {
+      body: JSON.stringify(data), // must match 'Content-Type' header
+      method: 'POST', // *GET, POST, PUT, DELETE, etc.
+      headers: {
+        'content-type': 'application/json'
+      },
+    }).then(response => 
+      response.json()
+    ).then(json => {
+      console.log('custom response')      
+      const directions = json.response.json
+
+      const newRoutes = directions.routes.map(route => {
+        return {
+        ...route,
+        bounds: {
+          south: route.bounds.southwest.lat,
+          west: route.bounds.southwest.lng,
+          north: route.bounds.northeast.lat,
+          east: route.bounds.northeast.lng
+        },
+        // TODO: FIND A WAY TO DRAW THE BLUE LINE
+        overview_path: pathDecoder(route.overview_polyline.points)
+      }})
+      
+      const newDirections = {
+        ...directions,
+        routes: newRoutes,
+        request: json.request
+      }
+
+      console.log(newDirections)
+
+      directionsDisplay.setDirections(newDirections);      
+    })
   }
+  
   calculateAndDisplayRoute(directionsService, directionsDisplay);
 }
